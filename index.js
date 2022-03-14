@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 
 const app = express();
 const connect = () =>{
-    return mongoose.connect()
+    return mongoose.connect("https://data.mongodb-api.com/app/data-cblkl/endpoint/data/beta")
 };
 // user
 
@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema({
     age: {type: Number, required: true},
     email: {type: String, required: true },
     address : {type: String, required: true },
-    
+
 
 });
 
